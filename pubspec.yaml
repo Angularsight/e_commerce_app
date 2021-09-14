@@ -1,0 +1,152 @@
+name: e_commerce_app
+description: A new Flutter project.
+
+# The following line prevents the package from being accidentally published to
+# pub.dev using `pub publish`. This is preferred for private packages.
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+# The following defines the version and build number for your application.
+# A version number is three numbers separated by dots, like 1.2.43
+# followed by an optional build number separated by a +.
+# Both the version and the builder number may be overridden in flutter
+# build by specifying --build-name and --build-number, respectively.
+# In Android, build-name is used as versionName while build-number used as versionCode.
+# Read more about Android versioning at https://developer.android.com/studio/publish/versioning
+# In iOS, build-name is used as CFBundleShortVersionString while build-number used as CFBundleVersion.
+# Read more about iOS versioning at
+# https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.12.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+
+  # The following adds the Cupertino Icons font to your application.
+  # Use with the CupertinoIcons class for iOS style icons.
+  cupertino_icons: ^1.0.2
+  google_maps_flutter: ^2.0.6
+  intl: ^0.17.0
+  flutter_icons: ^1.1.0
+
+  #For switching between white and dark mode
+  list_tile_switch: ^1.0.0
+  #For dark theme usage
+  provider: ^6.0.0
+  shared_preferences: ^2.0.7
+
+  #For feed screen
+  flutter_staggered_grid_view: ^0.4.0
+  badges: ^2.0.1
+
+  #For home screen
+  backdrop: ^0.6.2
+  carousel_pro: ^1.0.0
+  flutter_swiper: ^1.1.6
+
+  #For the landing page
+  cached_network_image: ^3.1.0
+
+  #For login page
+  image_picker: ^0.8.4
+  wave: ^0.2.0
+
+  #firebase
+  firebase_auth: ^3.1.0
+  firebase_core: ^1.6.0
+  cloud_firestore: ^2.5.1
+  #For generating random productID
+  uuid: ^3.0.4
+
+  #For storing images
+  image: ^3.0.2
+  firebase_storage: ^10.0.3
+
+  #google sign in
+  google_sign_in: ^5.1.0
+
+
+  #stripe payment
+  http: ^0.13.3
+  stripe_payment: ^1.1.4
+  progress_dialog: ^1.2.2
+
+  #splash screen
+  splashscreen: ^1.3.5
+  animated_text_kit: ^4.2.1
+
+
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+# For information on the generic Dart part of this file, see the
+# following page: https://dart.dev/tools/pub/pubspec
+
+# The following section is specific to Flutter.
+flutter:
+
+  # The following line ensures that the Material Icons font is
+  # included with your application, so that you can use the icons in
+  # the material Icons class.
+  uses-material-design: true
+
+  # To add assets to your application, add an assets section, like this:
+  assets:
+    - images/swiper_apple.jpg
+    - images/swiper_dell.png
+    - images/swiper_handm.png
+    - images/swiper_lv.png
+    - images/swiper_nike.jpg
+    - images/swiper_samsung.jpg
+    - images/jewellery_category.jpg
+    - images/furniture_category.jpeg
+    - images/clothes_category.jpeg
+    - images/phone_category.jpg
+    - images/sports_category.jpg
+    - images/watches_category.jpg
+    - images/dell_img.jpg
+    - images/search_background.jpg
+    - images/onboarding_one.jpg
+    - images/onboarding_two.jpg
+    - images/onboarding_three.jpg
+    - images/login_image.jpg
+    - images/logo.gif
+    - images/logo_two.gif
+
+  # An image asset can refer to one or more resolution-specific "variants", see
+  # https://flutter.dev/assets-and-images/#resolution-aware.
+
+  # For details regarding adding assets from package dependencies, see
+  # https://flutter.dev/assets-and-images/#from-packages
+
+  # To add custom fonts to your application, add a fonts section here,
+  # in this "flutter" section. Each entry in this list should have a
+  # "family" key with the font family name, and a "fonts" key with a
+  # list giving the asset and other descriptors for the font. For
+  # example:
+  fonts:
+    - family: Acme
+      fonts:
+        - asset: fonts/Acme-Regular.ttf
+          style: normal
+    - family: Besley
+      fonts:
+        - asset: fonts/Besley-Black.ttf
+          style: normal
+    - family: Berkshire
+      fonts:
+        - asset: fonts/BerkshireSwash-Regular.ttf
+          style: normal
+  #   - family: Trajan Pro
+  #     fonts:
+  #       - asset: fonts/TrajanPro.ttf
+  #       - asset: fonts/TrajanPro_Bold.ttf
+  #         weight: 700
+  #
+  # For details regarding fonts from package dependencies,
+  # see https://flutter.dev/custom-fonts/#from-packages
