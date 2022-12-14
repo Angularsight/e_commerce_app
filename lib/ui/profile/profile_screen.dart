@@ -426,16 +426,16 @@ class _ProfileScreenState extends State<ProfileScreen> {
           Row(
             mainAxisAlignment: MainAxisAlignment.end,
             children: [
-              TextButton(
+              InkWell(
 
-                  onPressed: ()=>Navigator.pop(context),
+                  onTap: ()=>Navigator.pop(context),
                   child: Text("Cancel",style: TextStyle(
                       color: Colors.grey
                   ),)),
 
-              TextButton(
+              InkWell(
 
-                  onPressed: ()async{
+                  onTap: ()async{
                     try{
                       await _auth.signOut();
                     }catch(error){

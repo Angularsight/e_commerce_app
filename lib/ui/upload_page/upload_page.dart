@@ -448,8 +448,8 @@ class _UploadPageState extends State<UploadPage> {
         width: MediaQuery.of(context).size.width,
         decoration: BoxDecoration(
             color: Colors.redAccent),
-        child: TextButton(
-          onPressed:() {
+        child: InkWell(
+          onTap:() {
             uploadDataToFirebase();
             setState(() {
               _descriptionEdit.clear();
@@ -594,9 +594,8 @@ class _UploadPageState extends State<UploadPage> {
           Row(
             mainAxisAlignment: MainAxisAlignment.end,
             children: [
-              TextButton(
-
-                  onPressed: ()=>Navigator.pop(context),
+              InkWell(
+                  onTap: ()=>Navigator.pop(context),
                   child: Text("Ok",style: TextStyle(
                       color: Colors.grey
                   ),)),

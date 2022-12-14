@@ -54,15 +54,10 @@ class CartEmpty extends StatelessWidget {
 
         Container(
           width:  MediaQuery.of(context).size.width * 0.8,
-          child: RaisedButton(
-            onPressed: (){
+          child: InkWell(
+            onTap: (){
               Navigator.push(context, MaterialPageRoute(builder: (context)=>HomeScreen()));
             },
-            shape: RoundedRectangleBorder(
-              borderRadius: BorderRadius.circular(22),
-              side: BorderSide(color: Colors.redAccent),
-            ),
-            color: Colors.redAccent,
             child: Text("Shop Now",
               textAlign: TextAlign.center,
               style: TextStyle(

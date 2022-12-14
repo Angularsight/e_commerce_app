@@ -83,7 +83,7 @@ class BrandsListTile extends StatelessWidget {
                         style: TextStyle(
                           fontWeight: FontWeight.w700,
                           fontSize: 17,
-                          color: Theme.of(context).textSelectionColor
+                          color: Theme.of(context).primaryColor
                         ),
                       ),
                       SizedBox(height: 20,),

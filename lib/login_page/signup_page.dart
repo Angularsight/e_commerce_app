@@ -343,8 +343,8 @@ class _SignupPageState extends State<SignupPage> {
                               borderRadius: BorderRadius.circular(10),
                               color: Colors.redAccent
                           ),
-                          child: TextButton(
-                            onPressed: _submitForm,
+                          child: InkWell(
+                            onTap: _submitForm,
                             // onPressed: () async{
                             //   if(await _submitForm()){
                             //     print('Entered');
@@ -387,8 +387,8 @@ class _SignupPageState extends State<SignupPage> {
                                     borderRadius: BorderRadius.circular(10),
                                     color: Colors.grey
                                 ),
-                                child: TextButton(
-                                  onPressed: _googleSignIn,
+                                child: InkWell(
+                                  onTap: _googleSignIn,
                                   child: Row(
                                     mainAxisAlignment: MainAxisAlignment.center,
                                     children: [
@@ -413,8 +413,8 @@ class _SignupPageState extends State<SignupPage> {
                                     borderRadius: BorderRadius.circular(10),
                                     color: Colors.blue
                                 ),
-                                child: TextButton(
-                                  onPressed: (){},
+                                child: InkWell(
+                                  onTap: (){},
                                   child: Row(
                                     mainAxisAlignment: MainAxisAlignment.center,
                                     children: [
@@ -472,9 +472,9 @@ class _SignupPageState extends State<SignupPage> {
           Row(
             mainAxisAlignment: MainAxisAlignment.end,
             children: [
-              TextButton(
+              InkWell(
 
-                  onPressed: ()=>Navigator.pop(context),
+                  onTap: ()=>Navigator.pop(context),
                   child: Text("Ok",style: TextStyle(
                       color: Colors.grey
                   ),)),

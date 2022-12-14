@@ -190,8 +190,8 @@ class _LoginPageState extends State<LoginPage> {
                             borderRadius: BorderRadius.circular(10),
                             color: Colors.redAccent
                           ),
-                          child: TextButton(
-                            onPressed: ()async{
+                          child: InkWell(
+                            onTap: ()async{
                               if(await _submitForm()){
                                 print('Entered');
                                 Navigator.push(context, MaterialPageRoute(builder:(context)=>ShopApp()));
@@ -213,8 +213,8 @@ class _LoginPageState extends State<LoginPage> {
                           ),
                         ),
                       ),
-                      TextButton(
-                          onPressed:() {
+                      InkWell(
+                          onTap:() {
                             Navigator.push(context, MaterialPageRoute(builder: (context)
                             =>ForgotPassword()));
                           },
@@ -264,9 +264,9 @@ class _LoginPageState extends State<LoginPage> {
           Row(
             mainAxisAlignment: MainAxisAlignment.end,
             children: [
-              TextButton(
+              InkWell(
 
-                  onPressed: ()=>Navigator.pop(context),
+                  onTap: ()=>Navigator.pop(context),
                   child: Text("Ok",style: TextStyle(
                       color: Colors.grey
                   ),)),

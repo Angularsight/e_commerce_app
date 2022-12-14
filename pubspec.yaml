@@ -71,7 +71,7 @@ dependencies:
 
   #stripe payment
   http: ^0.13.3
-  stripe_payment: ^1.1.4
+#  stripe_payment: ^1.1.4
   progress_dialog: ^1.2.2
 
   #splash screen

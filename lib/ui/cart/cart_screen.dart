@@ -52,15 +52,15 @@ class _CartScreenState extends State<CartScreen> {
             Row(
               mainAxisAlignment: MainAxisAlignment.end,
               children: [
-                TextButton(
+                InkWell(
 
-                    onPressed: ()=>Navigator.pop(context),
+                    onTap: ()=>Navigator.pop(context),
                     child: Text("Cancel",style: TextStyle(
                       color: Colors.grey
                     ),)),
-                TextButton(
+                InkWell(
 
-                    onPressed: (){
+                    onTap: (){
                       fct();
                       Navigator.pop(context);
                     },

@@ -126,8 +126,8 @@ class _ForgotPasswordState extends State<ForgotPassword> {
                           borderRadius: BorderRadius.circular(10),
                           color: Colors.redAccent
                       ),
-                      child: TextButton(
-                        onPressed: ()async{
+                      child: InkWell(
+                        onTap: ()async{
                           bool enter  = await _submitForm();
                           setState(() {
                             if(enter){

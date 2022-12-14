@@ -1,7 +1,6 @@
 
 
 
-import 'package:cached_network_image/cached_network_image.dart';
 import 'package:e_commerce_app/login_page/login.dart';
 import 'package:e_commerce_app/login_page/signup_page.dart';
 import 'package:e_commerce_app/ui/bottom_navigation_bar.dart';
